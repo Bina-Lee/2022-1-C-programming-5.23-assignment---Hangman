@@ -1,5 +1,281 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include<stdio.h>
 #include<string.h>
-int main() {
+#include<stdlib.h>
+#include<time.h>
+#include<ctype.h>
 
+void hangmancase1(void) {
+	printf("                \n");
+	printf("   	            \n");
+	printf("                \n");
+	printf("                \m");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("                \n");
+	printf("-----           \n");
+}
+void hangmancase2(void) {
+	printf("                \n");
+	printf("  |	            \n");
+	printf("  |             \n");
+	printf("  |             \m");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase3(void) {
+	printf("  ------        \n");
+	printf("  |	            \n");
+	printf("  |             \n");
+	printf("  |             \m");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase4(void) {
+	printf("  ------        \n");
+	printf("  |	   |        \n");
+	printf("  |             \n");
+	printf("  |             \m");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase5(void) {
+	printf("  ------        \n");
+	printf("  |	   |        \n");
+	printf("  |    -        \n");
+	printf("  |  /   \      \m");
+	printf("  | |     |     \n");
+	printf("  |  \   /      \n");
+	printf("  |    -        \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase6(void) {
+	printf("  ------        \n");
+	printf("  |	   |        \n");
+	printf("  |    -        \n");
+	printf("  |  /   \      \m");
+	printf("  | |     |     \n");
+	printf("  |  \   /      \n");
+	printf("  |    -        \n");
+	printf("  |    |        \n");
+	printf("  |    |        \n");
+	printf("  |    |        \n");
+	printf("  |    |        \n");
+	printf("  |    |        \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase7(void) {
+	printf("  ------        \n");
+	printf("  |	   |        \n");
+	printf("  |    -        \n");
+	printf("  |  /   \      \m");
+	printf("  | |     |     \n");
+	printf("  |  \   /      \n");
+	printf("  |    -        \n");
+	printf("  |    |        \n");
+	printf("  |   /|        \n");
+	printf("  |  / |        \n");
+	printf("  | /  |        \n");
+	printf("  |    |        \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase8(void) {
+	printf("  ------        \n");
+	printf("  |	   |        \n");
+	printf("  |    -        \n");
+	printf("  |  /   \      \m");
+	printf("  | |     |     \n");
+	printf("  |  \   /      \n");
+	printf("  |    -        \n");
+	printf("  |    |        \n");
+	printf("  |   /|\       \n");
+	printf("  |  / | \      \n");
+	printf("  | /  |  \     \n");
+	printf("  |    |        \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase9(void) {
+	printf("  ------        \n");
+	printf("  |	   |        \n");
+	printf("  |    -        \n");
+	printf("  |  /   \      \m");
+	printf("  | |     |     \n");
+	printf("  |  \   /      \n");
+	printf("  |    -        \n");
+	printf("  |    |        \n");
+	printf("  |   /|\       \n");
+	printf("  |  / | \      \n");
+	printf("  | /  |  \     \n");
+	printf("  |    |        \n");
+	printf("  |   /         \n");
+	printf("  |  /          \n");
+	printf("  | /           \n");
+	printf("  |             \n");
+	printf("-----           \n");
+}
+void hangmancase10(void) {
+	printf("  ------        \n");
+	printf("  |	   |        \n");
+	printf("  |    -        \n");
+	printf("  |  /   \      \m");
+	printf("  | |     |     \n");
+	printf("  |  \   /      \n");
+	printf("  |    -        \n");
+	printf("  |    |        \n");
+	printf("  |   /|\       \n");
+	printf("  |  / | \      \n");
+	printf("  | /  |  \     \n");
+	printf("  |    |        \n");
+	printf("  |   / \       \n");
+	printf("  |  /   \      \n");
+	printf("  | /     \     \n");
+	printf("  |             \n");
+	printf("-----           \n");
+
+}
+
+int main() {
+	char sample[39][20] = {
+		"apple","grapes","peach","orange","apricat","mango",
+		"sapodilla","kiwi","plum","pear","lichy","strawberry",
+		"banana","grapefruit","pomegranate","blackberry","raspberry"
+		"wattermelon","melon","custardapple","papaya","pineapple",
+		"guava","coconut","casabamelon","cherry","turkishpurplefig","jackfruit",
+		"dragonfruit","durianfruit","loquats","dates","rambutan",
+		"stanleyplum","damsonplum","greenapple","angelenoplum","bingcherry","physalis"
+	};									//39개 과일 단어 목록
+	srand(time(0));
+	int choose = rand() % 39;			//39개 중에 랜덤으로 단어 하나 선택
+	char solution[20];					//랜덤으로 선정된 정답 단어 저장할 배열
+	strcpy(solution, sample[choose]);	//배열에 단어 저장
+
+	int length = strlen(solution);		//답안의 글자 수
+	char answer[20];
+	for (int i = 0; i < length; i++) answer[i] = '_';
+										//답안 작성 할 배열
+										//답안 글자 수 만큼 언더바로 채워줌
+										//맞는 글자가 나올 때 마다 수정해서 채워 줄 예정
+
+	char canuse[] = "abcdefghijklmnopqrstuvwxyz";
+										//입력할 수 있는 문자들
+										//사용한 문자의 경우 언더바로 수정되게끔 할 예정
+	int count = 0;						//틀린 횟수를 세기 위한 변수, 10번 틀리면 게임 종료
+
+	while (1) {
+		printf("남은 횟수는 %d번 입니다\n", 10 - count);
+
+		printf("다음은 입력 가능한 문자 입니다\n%s\n", canuse);
+		char input;
+		input = getchar();
+		while (1) {
+			int checkcanuse = 0;
+			for (int i = 0; i < 26; i++) {
+				if (canuse[i] == input) {
+					checkcanuse++;
+					break;
+				}
+			}							//사용가능한 문자인지 확인하는 과정
+			if (canuse == 1)break;		//문자가 1개로 일치한다고 판단하면
+										//사용가능으로 판정, 이후 진행
+
+		}
+
+		int issolution = 0;				//일치하는 글자가 있는지 확인 및 카운트 하기 위한 변수
+		for (int j = 0; j < length; j++) {
+			if (solution[j] == input) {
+				answer[j] = input;		//일치하는 문자가 있으면 그 자리를 글자로 채움
+				issolution++;			//일치하는 문자가 있으면 카운트 해서 0의 값을 바꿔줌
+			}
+		}
+
+		printf("%s\n", answer);			//중간 진행상황 공개
+
+		if (strcmp(solution, answer) == 0)break;
+										//단어가 일치하면 게임 종료
+										//카운트가 10이 아닌 상태로 종료되기 때문에
+										//성공했는지 여부를 판단할 수 있음
+		if (issolution != 0) {			//일치하는 문자가 있었을 경우
+			printf("정답입니다 수고하셨습니다\n게임을 종료합니다\n");
+			//input값이 있었다고 알려주고 다음 입력값을 받도록 while문 초반으로 돌아감
+		}
+		else {
+			count++;					//틀린 횟수 카운트
+			switch (count) {
+			case 1: hangmancase1; break;
+			case 2: hangmancase2; break;
+			case 3: hangmancase3; break;
+			case 4: hangmancase4; break;
+			case 5: hangmancase5; break;
+			case 6: hangmancase6; break;
+			case 7: hangmancase7; break;
+			case 8: hangmancase8; break;
+			case 9: hangmancase9; break;
+			}							//몇번째로 틀렸는지에 따라서 그림 출력
+		}
+		if (count == 10)break;
+	}
 }
