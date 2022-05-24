@@ -219,30 +219,46 @@ int main() {
 										//답안 작성 할 배열
 										//답안 글자 수 만큼 언더바로 채워줌
 										//맞는 글자가 나올 때 마다 수정해서 채워 줄 예정
+	answer[length] = '\0';				//끝자리 표시
+	printf("%s\n", answer);				//최초 단어 칸수 제시
 
 	char canuse[] = "abcdefghijklmnopqrstuvwxyz";
 										//입력할 수 있는 문자들
 										//사용한 문자의 경우 언더바로 수정되게끔 할 예정
 	int count = 0;						//틀린 횟수를 세기 위한 변수, 10번 틀리면 게임 종료
 
-	while (1) {
-		printf("남은 횟수는 %d번 입니다\n", 10 - count);
+	char input;
 
+	while (1) {							//게임 시작
+		printf("남은 횟수는 %d번 입니다\n", 10 - count);
 		printf("다음은 입력 가능한 문자 입니다\n%s\n", canuse);
-		char input;
-		input = getchar();
+
 		while (1) {
 			int checkcanuse = 0;
+			input = getche();
 			for (int i = 0; i < 26; i++) {
 				if (canuse[i] == input) {
 					checkcanuse++;
 					break;
 				}
 			}							//사용가능한 문자인지 확인하는 과정
-			if (canuse == 1)break;		//문자가 1개로 일치한다고 판단하면
-										//사용가능으로 판정, 이후 진행
+			char* locate = strchr(canuse, input);
+			*locate = '_';
+			if (checkcanuse == 1) break;
+										//문자가 1개로 일치한다고 판단하면
+										//사용가능으로 판정, 공란처리, 이후진행
 
-		}
+
+			//////////////////////////////////////////////////////////////
+			//들어오면 안되는 문자가 들어오면 애가 순식간에 뻗어버림
+			//음
+			//몰라 자고일어나서 마저 하지뭐
+			////////////////////////////////////////////////////////////
+
+
+			printf("\n입력할 수 없는 문자입니다 다시 입력해 주세요\n");
+			input = getche();
+		}								//문자 입력받아서 사용할 수 있는 문자인지 검증하는 while문
 
 		int issolution = 0;				//일치하는 글자가 있는지 확인 및 카운트 하기 위한 변수
 		for (int j = 0; j < length; j++) {
@@ -252,14 +268,14 @@ int main() {
 			}
 		}
 
-		printf("%s\n", answer);			//중간 진행상황 공개
+		printf("\n%s\n", answer);			//중간 진행상황 공개
 
 		if (strcmp(solution, answer) == 0)break;
 										//단어가 일치하면 게임 종료
 										//카운트가 10이 아닌 상태로 종료되기 때문에
 										//성공했는지 여부를 판단할 수 있음
 		if (issolution != 0) {			//일치하는 문자가 있었을 경우
-			printf("정답입니다 수고하셨습니다\n게임을 종료합니다\n");
+			printf("아아아아아아악\n");
 			//input값이 있었다고 알려주고 다음 입력값을 받도록 while문 초반으로 돌아감
 		}
 		else {
@@ -278,4 +294,5 @@ int main() {
 		}
 		if (count == 10)break;
 	}
+	printf("answer is %s\n", answer);
 }
