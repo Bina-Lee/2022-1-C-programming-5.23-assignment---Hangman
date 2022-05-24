@@ -242,7 +242,7 @@ int main() {
 				}
 			}							//사용가능한 문자인지 확인하는 과정
 			
-			if (checkcanuse != 0) {
+			if ((checkcanuse != 0) && (input != '_')) {
 				char* locate = strchr(canuse, input);
 				*locate = '_';
 				break;
@@ -260,7 +260,7 @@ int main() {
 			}
 		}
 
-		printf("\n%s\n", answer);			//중간 진행상황 공개
+		printf("\n현재 상황 : %s\n", answer);			//중간 진행상황 공개
 
 		if (strcmp(solution, answer) == 0)break;
 										//단어가 일치하면 게임 종료
