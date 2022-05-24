@@ -7,195 +7,194 @@
 #include<ctype.h>
 
 void hangmancase1(void) {
-	printf("                \n");
-	printf("   	            \n");
-	printf("                \n");
-	printf("                \m");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
-	printf("                \n");
+	printf("         \n");
+	printf("              \n");
+	printf("           \n");
+	printf("         \n");
+	printf("        \n");
+	printf("          \n");
+	printf("              \n");
+	printf("              \n");
+	printf("             \n");
+	printf("             \n");
+	printf("             \n");
+	printf("              \n");
+	printf("             \n");
+	printf("            \n");
+	printf("             \n");
+	printf("               \n");
 	printf("-----           \n");
 }
 void hangmancase2(void) {
-	printf("                \n");
-	printf("  |	            \n");
-	printf("  |             \n");
-	printf("  |             \m");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
+	printf("         \n");
+	printf("  |            \n");
+	printf("  |         \n");
+	printf("  |       \n");
+	printf("  |      \n");
+	printf("  |        \n");
+	printf("  |            \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |          \n");
+	printf("  |           \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase3(void) {
 	printf("  ------        \n");
-	printf("  |	            \n");
-	printf("  |             \n");
-	printf("  |             \m");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
+	printf("  |            \n");
+	printf("  |         \n");
+	printf("  |       \n");
+	printf("  |      \n");
+	printf("  |        \n");
+	printf("  |            \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |          \n");
+	printf("  |           \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase4(void) {
 	printf("  ------        \n");
-	printf("  |	   |        \n");
-	printf("  |             \n");
-	printf("  |             \m");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
+	printf("  |    |        \n");
+	printf("  |         \n");
+	printf("  |       \n");
+	printf("  |      \n");
+	printf("  |        \n");
+	printf("  |            \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |          \n");
+	printf("  |           \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase5(void) {
 	printf("  ------        \n");
-	printf("  |	   |        \n");
+	printf("  |    |        \n");
 	printf("  |    -        \n");
-	printf("  |  /   \      \m");
+	printf("  |  /   \\      \n");
 	printf("  | |     |     \n");
-	printf("  |  \   /      \n");
+	printf("  |  \\   /      \n");
 	printf("  |    -        \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |           \n");
+	printf("  |            \n");
+	printf("  |           \n");
+	printf("  |          \n");
+	printf("  |           \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase6(void) {
 	printf("  ------        \n");
-	printf("  |	   |        \n");
+	printf("  |    |        \n");
 	printf("  |    -        \n");
-	printf("  |  /   \      \m");
+	printf("  |  /   \\      \n");
 	printf("  | |     |     \n");
-	printf("  |  \   /      \n");
+	printf("  |  \\   /      \n");
 	printf("  |    -        \n");
 	printf("  |    |        \n");
+	printf("  |    |       \n");
+	printf("  |    |       \n");
+	printf("  |    |       \n");
 	printf("  |    |        \n");
-	printf("  |    |        \n");
-	printf("  |    |        \n");
-	printf("  |    |        \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
+	printf("  |           \n");
+	printf("  |          \n");
+	printf("  |           \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase7(void) {
 	printf("  ------        \n");
-	printf("  |	   |        \n");
+	printf("  |    |        \n");
 	printf("  |    -        \n");
-	printf("  |  /   \      \m");
+	printf("  |  /   \\      \n");
 	printf("  | |     |     \n");
-	printf("  |  \   /      \n");
+	printf("  |  \\   /      \n");
 	printf("  |    -        \n");
 	printf("  |    |        \n");
-	printf("  |   /|        \n");
-	printf("  |  / |        \n");
-	printf("  | /  |        \n");
+	printf("  |   /|       \n");
+	printf("  |  / |       \n");
+	printf("  | /  |       \n");
 	printf("  |    |        \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
+	printf("  |           \n");
+	printf("  |          \n");
+	printf("  |           \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase8(void) {
 	printf("  ------        \n");
-	printf("  |	   |        \n");
+	printf("  |    |        \n");
 	printf("  |    -        \n");
-	printf("  |  /   \      \m");
+	printf("  |  /   \\      \n");
 	printf("  | |     |     \n");
-	printf("  |  \   /      \n");
+	printf("  |  \\   /      \n");
 	printf("  |    -        \n");
 	printf("  |    |        \n");
-	printf("  |   /|\       \n");
-	printf("  |  / | \      \n");
-	printf("  | /  |  \     \n");
+	printf("  |   /|\\       \n");
+	printf("  |  / | \\      \n");
+	printf("  | /  |  \\     \n");
 	printf("  |    |        \n");
-	printf("  |             \n");
-	printf("  |             \n");
-	printf("  |             \n");
+	printf("  |           \n");
+	printf("  |          \n");
+	printf("  |           \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase9(void) {
 	printf("  ------        \n");
-	printf("  |	   |        \n");
+	printf("  |    |        \n");
 	printf("  |    -        \n");
-	printf("  |  /   \      \m");
+	printf("  |  /   \\      \n");
 	printf("  | |     |     \n");
-	printf("  |  \   /      \n");
+	printf("  |  \\   /      \n");
 	printf("  |    -        \n");
 	printf("  |    |        \n");
-	printf("  |   /|\       \n");
-	printf("  |  / | \      \n");
-	printf("  | /  |  \     \n");
+	printf("  |   /|\\       \n");
+	printf("  |  / | \\      \n");
+	printf("  | /  |  \\     \n");
 	printf("  |    |        \n");
-	printf("  |   /         \n");
-	printf("  |  /          \n");
-	printf("  | /           \n");
+	printf("  |   /        \n");
+	printf("  |  /         \n");
+	printf("  | /          \n");
 	printf("  |             \n");
 	printf("-----           \n");
 }
 void hangmancase10(void) {
 	printf("  ------        \n");
-	printf("  |	   |        \n");
+	printf("  |    |        \n");
 	printf("  |    -        \n");
-	printf("  |  /   \      \m");
+	printf("  |  /   \\      \n");
 	printf("  | |     |     \n");
-	printf("  |  \   /      \n");
+	printf("  |  \\   /      \n");
 	printf("  |    -        \n");
 	printf("  |    |        \n");
-	printf("  |   /|\       \n");
-	printf("  |  / | \      \n");
-	printf("  | /  |  \     \n");
+	printf("  |   /|\\       \n");
+	printf("  |  / | \\      \n");
+	printf("  | /  |  \\     \n");
 	printf("  |    |        \n");
-	printf("  |   / \       \n");
-	printf("  |  /   \      \n");
-	printf("  | /     \     \n");
+	printf("  |   / \\       \n");
+	printf("  |  /   \\      \n");
+	printf("  | /     \\     \n");
 	printf("  |             \n");
 	printf("-----           \n");
-
 }
 
 int main() {
@@ -242,22 +241,15 @@ int main() {
 					break;
 				}
 			}							//사용가능한 문자인지 확인하는 과정
-			char* locate = strchr(canuse, input);
-			*locate = '_';
-			if (checkcanuse == 1) break;
-										//문자가 1개로 일치한다고 판단하면
+			
+			if (checkcanuse != 0) {
+				char* locate = strchr(canuse, input);
+				*locate = '_';
+				break;
+			}							//문자가 1개로 일치한다고 판단하면
 										//사용가능으로 판정, 공란처리, 이후진행
-
-
-			//////////////////////////////////////////////////////////////
-			//들어오면 안되는 문자가 들어오면 애가 순식간에 뻗어버림
-			//음
-			//몰라 자고일어나서 마저 하지뭐
-			////////////////////////////////////////////////////////////
-
-
 			printf("\n입력할 수 없는 문자입니다 다시 입력해 주세요\n");
-			input = getche();
+										//사용불가 판정시 재입력 받음
 		}								//문자 입력받아서 사용할 수 있는 문자인지 검증하는 while문
 
 		int issolution = 0;				//일치하는 글자가 있는지 확인 및 카운트 하기 위한 변수
@@ -275,21 +267,21 @@ int main() {
 										//카운트가 10이 아닌 상태로 종료되기 때문에
 										//성공했는지 여부를 판단할 수 있음
 		if (issolution != 0) {			//일치하는 문자가 있었을 경우
-			printf("아아아아아아악\n");
+
 			//input값이 있었다고 알려주고 다음 입력값을 받도록 while문 초반으로 돌아감
 		}
 		else {
 			count++;					//틀린 횟수 카운트
 			switch (count) {
-			case 1: hangmancase1; break;
-			case 2: hangmancase2; break;
-			case 3: hangmancase3; break;
-			case 4: hangmancase4; break;
-			case 5: hangmancase5; break;
-			case 6: hangmancase6; break;
-			case 7: hangmancase7; break;
-			case 8: hangmancase8; break;
-			case 9: hangmancase9; break;
+			case 1: hangmancase1(); break;
+			case 2: hangmancase2(); break;
+			case 3: hangmancase3(); break;
+			case 4: hangmancase4(); break;
+			case 5: hangmancase5(); break;
+			case 6: hangmancase6(); break;
+			case 7: hangmancase7(); break;
+			case 8: hangmancase8(); break;
+			case 9: hangmancase9(); break;
 			}							//몇번째로 틀렸는지에 따라서 그림 출력
 		}
 		if (count == 10)break;
