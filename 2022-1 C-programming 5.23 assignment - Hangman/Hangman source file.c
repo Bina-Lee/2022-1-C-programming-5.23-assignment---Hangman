@@ -197,8 +197,8 @@ void hangmancase10(void) {
 	printf("-----           \n");
 }
 
-int win = 0.0;							//승패여부판정용
-int lose = 0.0;
+int win = 0.0;							//승패카운트
+int lose = 0.0;							//승패카운트
 
 int play() {
 	printf("제시어는 '과일'입니다\n");
