@@ -197,7 +197,12 @@ void hangmancase10(void) {
 	printf("-----           \n");
 }
 
-int main() {
+int win = 0.0;							//승패여부판정용
+int lose = 0.0;
+
+int play() {
+	printf("제시어는 '과일'입니다\n");
+
 	char sample[39][20] = {
 		"apple","grapes","peach","orange","apricat","mango",
 		"sapodilla","kiwi","plum","pear","lichy","strawberry",
@@ -219,7 +224,7 @@ int main() {
 										//답안 글자 수 만큼 언더바로 채워줌
 										//맞는 글자가 나올 때 마다 수정해서 채워 줄 예정
 	answer[length] = '\0';				//끝자리 표시
-	printf("%s\n", answer);				//최초 단어 칸수 제시
+	printf("단어는 %d자리 입니다\n", length);				//최초 단어 칸수 제시
 
 	char canuse[] = "abcdefghijklmnopqrstuvwxyz";
 										//입력할 수 있는 문자들
@@ -272,19 +277,53 @@ int main() {
 		}
 		else {
 			count++;					//틀린 횟수 카운트
-			switch (count) {
-			case 1: hangmancase1(); break;
-			case 2: hangmancase2(); break;
-			case 3: hangmancase3(); break;
-			case 4: hangmancase4(); break;
-			case 5: hangmancase5(); break;
-			case 6: hangmancase6(); break;
-			case 7: hangmancase7(); break;
-			case 8: hangmancase8(); break;
-			case 9: hangmancase9(); break;
-			}							//몇번째로 틀렸는지에 따라서 그림 출력
+			
 		}
+		switch (count) {
+		case 1: hangmancase1(); break;
+		case 2: hangmancase2(); break;
+		case 3: hangmancase3(); break;
+		case 4: hangmancase4(); break;
+		case 5: hangmancase5(); break;
+		case 6: hangmancase6(); break;
+		case 7: hangmancase7(); break;
+		case 8: hangmancase8(); break;
+		case 9: hangmancase9(); break;
+		}							//몇번째로 틀렸는지에 따라서 그림 출력
 		if (count == 10)break;
 	}
-	printf("answer is %s\n", answer);
+	if (count == 10) {
+		hangmancase10();
+		printf("You lose\n");
+		lose = lose + 1;
+	}
+	else {
+		printf("You Win\n");
+		win = win + 1;
+	}
+	printf("answer is %s\n", solution);
+	printf("메인 화면으로 돌아갑니다\n\n");
+}
+int main() {
+	while (1) {
+	printf("행맨게임에 오신것을 환영합니다\n");
+	printf("이긴 게임 수 : %d\n", win);
+	printf("진 게임수 : %d\n", lose);
+	float percent = (win == 0) ? 0 : (float)win / (win + lose);
+	printf("현재 승률 : %.2f%%\n", percent * 100);
+		printf("1. 게임 플레이하기\n");
+		printf("2. 게임 종료\n");
+		int ifplay = 0;
+		scanf("%d", &ifplay);
+		while (ifplay < 1 || ifplay>2) {
+			printf("잘못된 입력값입니다\n");
+			printf("다시 입력해 주세요\n");
+			scanf("%d", &ifplay);
+		}
+		if (ifplay == 1) {
+			play();
+		}
+		else break;
+	}
+
 }
