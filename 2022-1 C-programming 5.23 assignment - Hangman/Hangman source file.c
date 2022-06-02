@@ -201,6 +201,13 @@ int win = 0.0;							//승패카운트
 int lose = 0.0;							//승패카운트
 
 int play() {
+
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// https://github.com/JS-Lee-0129/2022-1-C-programming-5.23-assignment---Hangman.git
+
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	printf("제시어는 만든놈이 게을러서 한개입니다\n");
 	printf("제시어는 '과일'입니다\n");
 
 	char sample[39][20] = {
@@ -235,27 +242,39 @@ int play() {
 
 	while (1) {							//게임 시작
 		printf("남은 횟수는 %d번 입니다\n", 10 - count);
-		printf("다음은 입력 가능한 문자 입니다\n%s\n", canuse);
+		printf("다음은 입력 가능한 문자 입니다\n%s\n\n\n", canuse);
 
-		while (1) {
-			int checkcanuse = 0;
-			input = getche();
-			for (int i = 0; i < 26; i++) {
-				if (canuse[i] == input) {
-					checkcanuse++;
-					break;
-				}
-			}							//사용가능한 문자인지 확인하는 과정
-			
-			if ((checkcanuse != 0) && (input != '_')) {
-				char* locate = strchr(canuse, input);
-				*locate = '_';
+		int checkcanuse = 0;
+		input = getche();
+		for (int i = 0; i < 26; i++) {
+			if (canuse[i] == input) {
+				checkcanuse++;
 				break;
-			}							//문자가 1개로 일치한다고 판단하면
+			}
+		}								//사용가능한 문자인지 확인하는 과정
+		
+		if ((checkcanuse != 0) && (input != '_')) {
+			char* locate = strchr(canuse, input);
+			*locate = '_';
+		}								//문자가 1개로 일치한다고 판단하면
 										//사용가능으로 판정, 공란처리, 이후진행
+		else {
 			printf("\n입력할 수 없는 문자입니다 다시 입력해 주세요\n");
-										//사용불가 판정시 재입력 받음
-		}								//문자 입력받아서 사용할 수 있는 문자인지 검증하는 while문
+			switch (count) {
+			case 1: hangmancase1(); break;
+			case 2: hangmancase2(); break;
+			case 3: hangmancase3(); break;
+			case 4: hangmancase4(); break;
+			case 5: hangmancase5(); break;
+			case 6: hangmancase6(); break;
+			case 7: hangmancase7(); break;
+			case 8: hangmancase8(); break;
+			case 9: hangmancase9(); break;
+			}							//몇번째로 틀렸는지에 따라서 그림 출력
+			printf("\n");
+			continue;					//사용불가 판정시 재입력 받음
+		}
+										//문자 입력받아서 사용할 수 있는 문자인지 검증하는 while문
 
 		int issolution = 0;				//일치하는 글자가 있는지 확인 및 카운트 하기 위한 변수
 		for (int j = 0; j < length; j++) {
@@ -290,19 +309,20 @@ int play() {
 		case 8: hangmancase8(); break;
 		case 9: hangmancase9(); break;
 		}							//몇번째로 틀렸는지에 따라서 그림 출력
+		printf("\n");
 		if (count == 10)break;
 	}
 	if (count == 10) {
 		hangmancase10();
-		printf("You lose\n");
+		printf("\n\n\n\n\nYou lose\n");
 		lose = lose + 1;
 	}
 	else {
-		printf("You Win\n");
+		printf("\n\n\n\n\nYou Win\n");
 		win = win + 1;
 	}
-	printf("answer is %s\n", solution);
-	printf("메인 화면으로 돌아갑니다\n\n");
+	printf("\nanswer is %s\n", solution);
+	printf("메인 화면으로 돌아갑니다\n\n\n\n\n\n");
 }
 int main() {
 	while (1) {
